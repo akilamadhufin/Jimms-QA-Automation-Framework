@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.0.1 (Python 3.12.6 on win32)" generated="2024-09-27T22:52:17.163003" rpa="false" schemaversion="5">
+<suite id="s1" name="SeleniumTest" source="d:\HAMK\2nd Year\SoftwareTesting\SW_Testing_Group_Project\SeleniumTest.robot">
+<test id="s1-t1" name="TC_08 user can view the items which cost's more than the minimum price" line="223">
+<kw name="Open Browser to Jimms">
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2024-09-27T22:52:18.100847" level="INFO">Opening browser 'Chrome' to base url 'https://www.jimms.fi/'.</msg>
+<arg>https://www.jimms.fi/</arg>
+<arg>Chrome</arg>
+<arg>options=add_argument("disable-search-engine-choice-screen"); add_experimental_option("detach",True)</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2024-09-27T22:52:18.099857" elapsed="7.138091"/>
+</kw>
+<kw name="Maximize Browser Window" owner="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" start="2024-09-27T22:52:25.238549" elapsed="9.845123"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-27T22:52:37.093458" level="INFO">Slept 2 seconds.</msg>
+<arg>2s</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-27T22:52:35.087864" elapsed="2.015632"/>
+</kw>
+<status status="PASS" start="2024-09-27T22:52:18.096712" elapsed="19.012951"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-27T22:52:37.220267" level="INFO">Clicking element 'xpath=//*[@id="sitemegamenu"]/nav/ul/li[1]/a'.</msg>
+<arg>xpath=//*[@id="sitemegamenu"]/nav/ul/li[1]/a</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-09-27T22:52:37.203798" elapsed="3.380460"/>
+</kw>
+<kw name="Sleep" owner="BuiltIn">
+<msg time="2024-09-27T22:52:42.739603" level="INFO">Slept 2 seconds.</msg>
+<arg>2S</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="PASS" start="2024-09-27T22:52:40.736376" elapsed="2.005216"/>
+</kw>
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-09-27T22:52:42.834053" level="INFO">Clicking element 'xpath=//*[@id="sitemegamenu"]/nav/ul/li[1]/div/ul/li[1]/ul/li[4]/a/font/font'.</msg>
+<msg time="2024-09-27T22:52:43.831641" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-09-27T22:52:43.831641" level="FAIL">Element with locator 'xpath=//*[@id="sitemegamenu"]/nav/ul/li[1]/div/ul/li[1]/ul/li[4]/a/font/font' not found.</msg>
+<arg>xpath=//*[@id="sitemegamenu"]/nav/ul/li[1]/div/ul/li[1]/ul/li[4]/a/font/font</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="FAIL" start="2024-09-27T22:52:42.832940" elapsed="1.036621">Element with locator 'xpath=//*[@id="sitemegamenu"]/nav/ul/li[1]/div/ul/li[1]/ul/li[4]/a/font/font' not found.</status>
+</kw>
+<status status="FAIL" start="2024-09-27T22:52:18.078058" elapsed="25.839892">Element with locator 'xpath=//*[@id="sitemegamenu"]/nav/ul/li[1]/div/ul/li[1]/ul/li[4]/a/font/font' not found.</status>
+</test>
+<status status="FAIL" start="2024-09-27T22:52:17.174032" elapsed="27.037990"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" skip="0" id="s1" name="SeleniumTest">SeleniumTest</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
